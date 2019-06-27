@@ -1,0 +1,67 @@
+﻿<Window x:Class="PianoGameThing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PianoGameThing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" Background="#222222">
+    <Grid Margin="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="C" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="C_Click"/>
+        <Button Content="Db" Grid.Column="1" Grid.RowSpan="2"
+                Style="{StaticResource SmallPianoButton}"
+                Click="Db_Click"/>
+        <Button Content="D" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="D_Click"/>
+        <Button Content="Eb" Grid.Column="3" Grid.RowSpan="2"
+                Style="{StaticResource SmallPianoButton}"
+                Click="Eb_Click"/>
+        <Button Content="E" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="E_Click"/>
+        <Button Content="F" Grid.Column="5" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="F_Click"/>
+        <Button Content="Gb" Grid.Column="6" Grid.RowSpan="2"
+                Style="{StaticResource SmallPianoButton}"
+                Click="Gb_Click"/>
+        <Button Content="G" Grid.Column="7" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="G_Click"/>
+        <Button Content="Ab" Grid.Column="8" Grid.RowSpan="2"
+                Style="{StaticResource SmallPianoButton}"
+                Click="Ab_Click"/>
+        <Button Content="A" Grid.Column="9" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="A_Click"/>
+        <Button Content="Bb" Grid.Column="10" Grid.RowSpan="2"
+                Style="{StaticResource SmallPianoButton}"
+                Click="Bb_Click"/>
+        <Button Content="B" Grid.Column="11" Grid.Row="1" Grid.RowSpan="2"
+                Style="{StaticResource LargePianoButton}"
+                Click="B_Click"/>
+    </Grid>
+</Window>
