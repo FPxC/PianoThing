@@ -27,3 +27,6 @@ C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\Sounds\P
 C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\Sounds\Piano-mf-F3.wav
 C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\Sounds\Piano-mf-G3.wav
 C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\Sounds\Piano-mf-Gb3.wav
+C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\NAudio.dll
+C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\bin\Debug\NAudio.xml
+C:\Users\Gebruiker\source\repos\PianoGameThing\PianoGameThing\obj\Debug\PianoGameThing.csproj.CopyComplete

@@ -1,9 +1,11 @@
-﻿using PianoGameThing.Sounds;
+﻿using NAudio.Wave;
+using PianoGameThing.Sounds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,7 +24,7 @@ namespace PianoGameThing
     /// </summary>
     public partial class MainWindow : Window
     {
-        SoundPlayer playerC;
+        /*SoundPlayer playerC;
         SoundPlayer playerDb;
         SoundPlayer playerD;
         SoundPlayer playerEb;
@@ -33,13 +35,43 @@ namespace PianoGameThing
         SoundPlayer playerAb;
         SoundPlayer playerA;
         SoundPlayer playerBb;
-        SoundPlayer playerB;
+        SoundPlayer playerB;*/
+
+        AudioPlaybackEngine audioEngine;
+
+        CachedSound pianoC;
+        CachedSound pianoDb;
+        CachedSound pianoD;
+        CachedSound pianoEb;
+        CachedSound pianoE;
+        CachedSound pianoF;
+        CachedSound pianoGb;
+        CachedSound pianoG;
+        CachedSound pianoAb;
+        CachedSound pianoA;
+        CachedSound pianoBb;
+        CachedSound pianoB;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            playerC = new SoundPlayer(SoundNames.PianoC);
+            audioEngine = new AudioPlaybackEngine();
+
+            pianoC = new CachedSound(SoundNames.PianoC);
+            pianoDb = new CachedSound(SoundNames.PianoDb);
+            pianoD = new CachedSound(SoundNames.PianoD);
+            pianoEb = new CachedSound(SoundNames.PianoEb);
+            pianoE = new CachedSound(SoundNames.PianoE);
+            pianoF = new CachedSound(SoundNames.PianoF);
+            pianoGb = new CachedSound(SoundNames.PianoGb);
+            pianoG = new CachedSound(SoundNames.PianoG);
+            pianoAb = new CachedSound(SoundNames.PianoAb);
+            pianoA = new CachedSound(SoundNames.PianoA);
+            pianoBb = new CachedSound(SoundNames.PianoBb);
+            pianoB = new CachedSound(SoundNames.PianoB);
+
+            /*playerC = new SoundPlayer(SoundNames.PianoC);
             playerC.Load();
             playerDb = new SoundPlayer(SoundNames.PianoDb);
             playerDb.Load();
@@ -62,66 +94,90 @@ namespace PianoGameThing
             playerBb = new SoundPlayer(SoundNames.PianoBb);
             playerBb.Load();
             playerB = new SoundPlayer(SoundNames.PianoB);
-            playerB.Load();
+            playerB.Load();*/
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
         {
-            playerC.Play();
+            //playerC.Play();
+
+            audioEngine.PlaySound(pianoC);
         }
 
         private void Db_Click(object sender, RoutedEventArgs e)
         {
-            playerDb.Play();
+            //playerDb.Play();
+
+            audioEngine.PlaySound(pianoDb);
         }
 
         private void D_Click(object sender, RoutedEventArgs e)
         {
-            playerD.Play();
+            //playerD.Play();
+
+            audioEngine.PlaySound(pianoD);
         }
 
         private void Eb_Click(object sender, RoutedEventArgs e)
         {
-            playerEb.Play();
+            //playerEb.Play();
+
+            audioEngine.PlaySound(pianoEb);
         }
         private void E_Click(object sender, RoutedEventArgs e)
         {
-            playerE.Play();
+            //playerE.Play();
+
+            audioEngine.PlaySound(pianoE);
         }
 
         private void F_Click(object sender, RoutedEventArgs e)
         {
-            playerF.Play();
+            //playerF.Play();
+
+            audioEngine.PlaySound(pianoF);
         }
 
         private void Gb_Click(object sender, RoutedEventArgs e)
         {
-            playerGb.Play();
+            //playerGb.Play();
+
+            audioEngine.PlaySound(pianoGb);
         }
 
         private void G_Click(object sender, RoutedEventArgs e)
         {
-            playerG.Play();
+            //playerG.Play();
+
+            audioEngine.PlaySound(pianoG);
         }
 
         private void Ab_Click(object sender, RoutedEventArgs e)
         {
-            playerAb.Play();
+            //playerAb.Play();
+
+            audioEngine.PlaySound(pianoAb);
         }
 
         private void A_Click(object sender, RoutedEventArgs e)
         {
-            playerA.Play();
+            //playerA.Play();
+
+            audioEngine.PlaySound(pianoA);
         }
 
         private void Bb_Click(object sender, RoutedEventArgs e)
         {
-            playerBb.Play();
+            //playerBb.Play();
+
+            audioEngine.PlaySound(pianoBb);
         }
 
         private void B_Click(object sender, RoutedEventArgs e)
         {
-            playerB.Play();
+            //playerB.Play();
+
+            audioEngine.PlaySound(pianoB);
         }
     }
 }
